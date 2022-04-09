@@ -226,7 +226,7 @@ void setup() {
 
 void loop() {
 
-if(P1=="Mask"){
+if(P1=="Mask" && P2 >= "0.75"){
   
   Serial.println("Face mask detected...");
   digitalWrite(opt, HIGH);

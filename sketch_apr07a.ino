@@ -4,7 +4,7 @@ int buzz = 6;
 
 void setup() {  
   // put your setup code here, to run once:
-  Serial.begin(9600);
+  Serial.begin(115200);
   pinMode(input_cam,INPUT);
   pinMode(buzz,OUTPUT);
   digitalWrite(input_cam,LOW);
@@ -18,7 +18,7 @@ void loop() {
     {
       digitalWrite(buzz,HIGH);
       Serial.println("Mask Dd");
-      delay(1000);
+      delay(5000);
       digitalWrite(buzz,LOW);
     }
     delay(1000);
